@@ -1,5 +1,6 @@
 -- this is the introduction
-variable (P Q R S U V W A I O U: Prop)
+namespace First
+variable (P Q R S U V W A I O U: Prop) 
 example  (todo_list : P) : P := by
   exact todo_list
 
@@ -46,4 +47,6 @@ example (A C I O P S U : Prop)(h: ((P ∧ S) ∧ A) ∧ ¬I ∧ (C ∧ ¬O) ∧ 
   have s := h.left.left.right
   exact ⟨a,⟨c,⟨p,s⟩⟩⟩
 
+
 --end of the first world
+end First
