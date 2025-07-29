@@ -1,0 +1,10 @@
+name = "stream_logic"
+version = "0.1.0"
+defaultTargets = ["stream_logic"]
+
+[[lean_lib]]
+name = "StreamLogic"
+
+[[lean_exe]]
+name = "stream_logic"
+root = "Main"
